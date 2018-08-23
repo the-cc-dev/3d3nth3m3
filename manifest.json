@@ -1,0 +1,35 @@
+{
+  "paths": {
+    "assets":   "assets/",
+    "dist":     "dist/"
+  },
+  "dependencies": {
+    "main.js": {
+      "files": ["coffee/main.coffee"]
+    },
+    "main.css": {
+      "files": ["less/main.less"]
+    },
+    "scripts.js": {
+      "bower":  ["jquery", "semantic-ui"],
+      "files":  ["js/main.js"],
+      "main":   true
+    },
+    "styles.css": {
+      "bower": ["semantic-ui"],
+      "files":  ["css/main.css"],
+      "main":   true
+    }
+  },
+  "config": {
+    "devUrl": "http://localhost:8888/ccwp/",
+    "watchFiles": [
+      "./**/*.php",
+      "../../plugins/cc-plugin/**/*"
+    ],
+    "snippetOptions": {
+      "whitelist": ["/wp-admin/admin-ajax.php"],
+      "blacklist": ["/wp-admin/**"]
+    }
+  }
+}

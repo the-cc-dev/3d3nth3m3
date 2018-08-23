@@ -1,0 +1,18 @@
+{
+  "name": "3d3nth3m3",
+  "homepage": "http://www.ccd3v.net/",
+  "authors": [
+    "the-cc-dev <the.cc.dev@gmail.com>"
+  ],
+  "description": "starter theme  for/by ccd3v",
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "vendor"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "semantic": "semantic-ui#^2.3.3"
+  }
+}

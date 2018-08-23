@@ -1,0 +1,52 @@
+{
+  "name": "3d3nth3m3",
+  "version": "1.0.0",
+  "author": "the-cc-dev <the.cc.dev@gmail.com>",
+  "homepage": "http://www.ccd3v.net/",
+  "private": true,
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "build": "npm install && bower install && gulp"
+  },
+  "engines": {
+    "node": ">= 4.5"
+  },
+  "dependencies": {
+    "typerocket-assets": "^3.0.0-43"
+  },
+  "devDependencies": {
+    "asset-builder": "^1.1.0",
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gu": "^0.6.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-coffee": "^3.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-debug": "^3.2.0",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-filter": "^5.1.0",
+    "gulp-flatten": "^0.4.0",
+    "gulp-if": "^2.0.2",
+    "gulp-ignore": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-inject": "^4.3.2",
+    "gulp-less": "^3.5.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-remark": "^4.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^1.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6",
+    "lazypipe": "^1.0.1",
+    "merge-stream": "^1.0.1",
+    "run-sequence": "^2.2.1"
+  }
+}

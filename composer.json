@@ -1,0 +1,20 @@
+{
+    "name": "the-cc-dev/3d3nth3m3",
+    "description": "dev theme on typerocket",
+    "keywords": ["framework", "typerocket"],
+    "license": "GPL",
+    "homepage": "http://typerocket.com",
+    "authors": [
+        {
+          "name": "CC D3V",
+          "email": "the.cc.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "typerocket/typerocket": "^3.0",
+        "timber/timber": "^1.7"
+    },
+    "autoload": {},
+    "scripts": {},
+    "minimum-stability": "stable"
+}
