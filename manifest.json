@@ -4,32 +4,87 @@
     "dist":     "dist/"
   },
   "dependencies": {
-    "main.js": {
-      "files": ["coffee/main.coffee"]
+    "fonts": {
+      "files": ["fonts/**/*"]
     },
-    "main.css": {
-      "files": ["less/main.less"]
+    "images": {
+      "files": ["images/**/*"]
     },
-    "scripts.js": {
-      "bower":  ["jquery", "semantic-ui"],
-      "files":  ["js/main.js"],
-      "main":   true
+    "jquery.js": {
+      "npm": ["jquery"]
+    },
+    "semantic.js": {
+      "files": [
+        "scripts/semantic/**/{reset,site,button,container,divider,flag,header,icon,image,input,label,list,loader,rail,reveal,segment,step,breadcrumb,form,grid,menu,message,table,ad,card,comment,feed,item,statistic,accordion,calendar,checkbox,dimmer,dropdown,embed,modal,nag,popup,progress,rating,search,shape,sidebar,sticky,tab,transition,api,form,state,visibility}.js"
+      ]
+    },
+    "project.js": {
+      "files": ["scripts/main.coffee"]
     },
     "styles.css": {
-      "bower": ["semantic-ui"],
-      "files":  ["css/main.css"],
-      "main":   true
+      "files":  ["styles/main.less"]
     }
   },
   "config": {
-    "devUrl": "http://localhost:8888/ccwp/",
-    "watchFiles": [
-      "./**/*.php",
-      "../../plugins/cc-plugin/**/*"
-    ],
-    "snippetOptions": {
-      "whitelist": ["/wp-admin/admin-ajax.php"],
-      "blacklist": ["/wp-admin/**"]
+    "assets": {
+      "all": "assets/**/*",
+      "fonts": {
+        "path": "assets/fonts/",
+        "all": "assets/fonts/**/*"
+      },
+      "images": {
+        "path": "assets/images/",
+        "all": "assets/images/**/*"
+      },
+      "scripts": {
+        "path": "assets/scripts/",
+        "all": "assets/scripts/**/*",
+        "main": "assets/scripts/main.coffee",
+        "definitions": "assets/scripts/semantic/{globals,modules,behaviors}/"
+      },
+      "styles": {
+        "path": "assets/styles/",
+        "all": "assets/styles/**/*",
+        "main": "assets/styles/main.less",
+        "semantic": "assets/styles/{definitions,site}/{globals,elements,collections,views,modules,behaviors}/"
+      },
+      "definitions": {
+
+      },
+      "components": [
+        "reset", "site",
+        "button", "container", "divider", "flag",  "header", "icon", "image",
+        "input", "label", "list", "loader", "rail", "reveal", "segment", "step",
+        "breadcrumb", "form", "grid", "menu", "message", "table",
+        "ad", "card", "comment", "feed", "item", "statistic",
+        "accordion", "calendar", "checkbox", "dimmer", "dropdown", "embed",
+        "modal", "nag", "popup", "progress", "rating", "search",
+        "shape", "sidebar", "sticky", "tab", "transition",
+        "api", "form", "state", "visibility"
+      ],
+      "themes": "assets/styles/themes/**/assets/**/*.*"
+    },
+    "dist": {
+      "all": "dist/**/*",
+      "fonts": "dist/fonts/",
+      "images": "dist/images/",
+      "themes": "dist/themes/"
+    },
+    "settings" : {
+      "devUrl": "http://localhost:8888/ccwp/",
+      "imagemin": {
+        "optimizationLevel": 3,
+        "progressive": true,
+        "interlaced": true
+      },
+      "snippetOptions": {
+        "whitelist": ["/wp-admin/admin-ajax.php"],
+        "blacklist": ["/wp-admin/**"]
+      },
+      "watchFiles": [
+        "./**/*.{php,html,json,md}",
+        "../../plugins/cc-plugin/**/*"
+      ]
     }
   }
 }

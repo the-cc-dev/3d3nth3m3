@@ -1,0 +1,75 @@
+.bgc( @val: transparent     ) { background-color: @val!important; }
+.brd( @val: 1px solid black ) {           border: @val!important; }
+.bdc( @val: black           ) {     border-color: @val!important; }
+.bdr( @val: 0               ) {    border-radius: @val!important; }
+.btm( @val: 0               ) {           bottom: @val!important; }
+.clr( @val: black           ) {            color: @val!important; }
+.dsp( @val: block           ) {          display: @val!important; }
+.fnt( @val: 14px serif      ) {             font: @val!important; }
+.ffm( @val: serif           ) {      font-family: @val!important; }
+.fsz( @val: 14px            ) {        font-size: @val!important; }
+.fst( @val: normal          ) {       font-style: @val!important; }
+.fwt( @val: normal          ) {      font-weight: @val!important; }
+.hgt( @val: 100%            ) {           height: @val!important; }
+.lft( @val: 0               ) {             left: @val!important; }
+.lnh( @val: 20px            ) {      line-height: @val!important; }
+.mgn( @val: 0               ) {           margin: @val!important; }
+.mnt( @val: 0               ) {       margin-top: @val!important; }
+.mnr( @val: 0               ) {     margin-right: @val!important; }
+.mnb( @val: 0               ) {    margin-bottom: @val!important; }
+.mnl( @val: 0               ) {      margin-left: @val!important; }
+.mlr( @val: 0               ) {     .mnl( @val );   .mnr( @val ); }
+.mtb( @val: 0               ) {     .mnt( @val );   .mnb( @val ); }
+.mnw( @val: 100%            ) {        min-width: @val!important; }
+.ovf( @val: hidden          ) {         overflow: @val!important; }
+.pad( @val: 0               ) {          padding: @val!important; }
+.pdt( @val: 0               ) {      padding-top: @val!important; }
+.pdr( @val: 0               ) {    padding-right: @val!important; }
+.pdb( @val: 0               ) {   padding-bottom: @val!important; }
+.pdl( @val: 0               ) {     padding-left: @val!important; }
+.plr( @val: 0               ) {     .pdl( @val );   .pdr( @val ); }
+.ptb( @val: 0               ) {     .pdt( @val );   .pdb( @val ); }
+.pxn( @val: flex            ) {         position: @val!important; }
+.rgt( @val: 0               ) {            right: @val!important; }
+.txa( @val: center          ) {       text-align: @val!important; }
+.txd( @val: none            ) {  text-decoration: @val!important; }
+.txs( @val: none            ) {      text-shadow: @val!important; }
+.top( @val: 0               ) {              top: @val!important; }
+.wid( @val: 100%            ) {            width: @val!important; }
+.znx( @val: 5               ) {          z-index: @val!important; }
+
+.cc( @clr: black, @bgc: transparent ) { .bgc( @bgc ); .clr( @clr ); }
+.bl( @btm:     0, @lft:           0 ) { .btm( @btm ); .lft( @lft ); }
+.br( @btm:     0, @rgt:           0 ) { .btm( @btm ); .rgt( @rgt ); }
+.dp( @dsp:  flex, @pxn:    relative ) { .dsp( @dsp ); .pxn( @pxn ); }
+.mp( @mgn:     0, @pad:           0 ) { .mgn( @mgn ); .pad( @pad ); }
+.tl( @top:     0, @lft:           0 ) { .top( @top ); .lft( @lft ); }
+.tr( @top:     0, @rgt:           0 ) { .top( @top ); .rgt( @rgt ); }
+.wh( @wid:  100%, @hgt:        100% ) { .wid( @wid ); .hgt( @hgt ); }
+.zo( @znx:     5, @ovf:      hidden ) { .znx( @znx ); .ovf( @ovf ); }
+
+.square( @length: 10px ) { .wh( @length, @length ) ; }
+
+.dptl( @dsp: inline-block, @pxn: absolute, @top: 0, @lft: 0 )
+     { .dp( @dsp, @pxn ); .tl( @top, @lft ); }
+.dptr( @dsp: inline-block, @pxn: absolute, @top: 0, @rig: 0 )
+     { .dp( @dsp, @pxn ); .tr( @top, @rig ); }
+.dpbl( @dsp: inline-block, @pxn: absolute, @btm: 0, @lft: 0 )
+     { .dp( @dsp, @pxn ); .bl( @btm, @lft ); }
+.dpbr( @dsp: inline-block, @pxn: absolute, @btm: 0, @rig: 0 )
+     { .dp( @dsp, @pxn ); .br( @btm, @rig ); }
+.dpwh( @dsp: inline-block, @pxn: absolute, @wid: 100%, @hgt: 100% )
+     { .dp( @dsp, @pxn ); .wh( @wid, @hgt ); }
+
+.whmp( @wid: 100%, @hgt: 100%, @mar: 0, @pad: 0 )
+     { .wh( @wid, @hgt ); .mp( @mar, @pad ); }
+.fill( @dsp: inline-block, @pxn: fixed, @top: 0, @lft: 0,
+	     @wid:         100vw, @hgt:  100vh, @mar: 0, @pad: 0 )
+     { .dp( @dsp, @pxn ); .tl( @top, @lft );
+			 .wh( @wid, @hgt ); .mp( @mar, @pad ); }
+
+.font( @ffm: serif, @fsz: 14px, @fwt: normal )
+     { .ffm( @ffm ); .fsz( @fsz ); .fwt( @fwt ); }
+.text( @ffm:  serif, @fsz:   14px, @fst: normal,
+	     @fwt: normal, @txa: center, @txd:  none )
+     { .font( @ffm, @fsz, @fwt ); .fst( @fst ); }

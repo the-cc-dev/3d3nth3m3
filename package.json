@@ -11,42 +11,69 @@
     }
   ],
   "scripts": {
-    "build": "npm install && bower install && gulp"
+    "build": "gulp"
   },
   "engines": {
     "node": ">= 4.5"
   },
   "dependencies": {
+    "jquery": "^3.2.1",
     "typerocket-assets": "^3.0.0-43"
   },
   "devDependencies": {
     "asset-builder": "^1.1.0",
+    "better-console": "*",
     "browser-sync": "^2.23.6",
     "del": "^3.0.0",
-    "gu": "^0.6.2",
+    "extend": "*",
+    "github": "*",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-changed": "^3.2.0",
+    "gulp-chmod": "*",
+    "gulp-clean-css": "*",
+    "gulp-clone": "*",
     "gulp-coffee": "^3.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "*",
+    "gulp-concat-filenames": "*",
+    "gulp-copy": "*",
     "gulp-cssnano": "^2.1.2",
     "gulp-debug": "^3.2.0",
+    "gulp-dedupe": "0.0.2",
     "gulp-ext-replace": "^0.3.0",
     "gulp-filter": "^5.1.0",
     "gulp-flatten": "^0.4.0",
+    "gulp-git": "*",
+    "gulp-header": "*",
+    "gulp-help": "*",
     "gulp-if": "^2.0.2",
     "gulp-ignore": "^2.0.2",
     "gulp-imagemin": "^4.1.0",
     "gulp-inject": "^4.3.2",
+    "gulp-install": "^1.1.0",
+    "gulp-json-editor": "^2.2.1",
     "gulp-less": "^3.5.0",
+    "gulp-notify": "*",
     "gulp-plumber": "^1.2.0",
+    "gulp-print": "*",
     "gulp-remark": "^4.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^1.0.0",
+    "gulp-rtlcss": "*",
+    "gulp-tap": "*",
     "gulp-uglify": "^3.0.0",
     "gulp-uncss": "^1.0.6",
+    "gulp-util": "*",
+    "gulp-watch": "*",
     "lazypipe": "^1.0.1",
+    "map-stream": "*",
     "merge-stream": "^1.0.1",
-    "run-sequence": "^2.2.1"
+    "mkdirp": "^0.5.1",
+    "prompt-sui": "^3.2.1",
+    "require-dot-file": "*",
+    "run-sequence": "^2.2.1",
+    "wrench-sui": "^0.0.3",
+    "yamljs": "*"
   }
 }
